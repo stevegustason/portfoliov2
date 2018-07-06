@@ -1,0 +1,134 @@
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-bottom: solid 1px black;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.nav-link {
+  padding: 0px 50px 0px 50px;
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -75px;
+    visibility: hidden;
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#introcontainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#intro, h2 {
+  font-weight: normal;
+}
+
+#maroon {
+  color: #660000;
+}
+
+#projects {
+  width: 100%;
+  background-color: #660000;
+  color: white;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#prjgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 25px;
+}
+
+.project-tile {
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.project-tile:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  margin-top: 15px;
+  width: 90%;
+}
+
+#contact {
+  width: 100%;
+  background-color: #003D3D;
+  color: white;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 200px;
+}
+
+.fa {
+  text-decoration: none;
+  color: white;
+  margin: 150px 50px 0px 50px;
+}
+
+.fa:hover {
+  color: LightGray;
+}
+
+#footer {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+}
+
+@media (max-width: 1000px) {
+  .nav-link {
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+  }
+
+  #prjgrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 25px;
+  }
+}
